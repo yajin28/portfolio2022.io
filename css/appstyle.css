@@ -1,0 +1,1472 @@
+@media(max-width: 719px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    
+    body{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #2d2d2d;
+        color: #fff;
+        letter-spacing: 4px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px 30px;
+    }
+    
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+        padding: 20px 40px;
+        z-index: 2;
+    }
+    
+    header.sticky{
+        padding: 10px 40px 10px;
+        background-color: #76ffb4;
+        color: #2d2d2d;
+    }
+    
+    header.sticky a{
+        color: #2d2d2d;
+    }
+    
+    header .logo{
+        position: relative;
+        transition: 0.6s;
+        display: flex;
+        max-width: 120px;
+    }
+    
+    header .logo img{
+        width: 120px;
+    }
+    
+    header .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        z-index: 3;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.2s;
+        list-style: none;
+        padding-left: 0;
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    header .navigation.active{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header ul li{
+        position: relative;
+        top: 30%;
+    }
+        
+    header ul li p{
+        position: relative;
+        margin: 10px 0px 0px;
+        border-radius: 5px;
+        font-size: large;
+        text-decoration: none;
+        color: #76ffb4;
+        letter-spacing: 4px;
+        transition: 0.6s;
+        cursor: default;
+    }
+
+    header ul li a{
+        display: inline-block;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #2d2d2d;
+        letter-spacing: 4px;
+        font-size: large;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    
+    header ul li a:hover{
+        transition: 0.2s;
+        color: pink;
+    }
+    .toggleMenu{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../img/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 4;
+        cursor: pointer;
+    }
+
+    .toggleMenu.active{
+        background: url(../img/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        filter: invert(1);
+    }
+    
+    .appbnr{
+        position: relative;
+        display: flex;
+        min-height: 100vh;
+        transition: 0.6s;
+    }
+    
+    .appbnr img{
+        max-width: 250px;
+        margin-top: 50%;
+        transition: 0.6s;
+    }
+    
+    .appbnr p{
+        margin: 30px;
+    }
+    
+    .scroll{
+        margin-top:80px;
+        font-size: small;
+        font-weight: light;
+    }
+    
+    .scroll i{
+        padding:5px;
+    }
+    
+    .beauty-app{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .beauty-app .beauty-info{
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .beauty-app .beauty-info img{
+        max-width: 90px;
+    }
+    
+    .beauty-app .beauty-info h3{
+        color: #B8A8EB;
+        font-size: xx-large;
+        font-weight: bolder;
+        text-align: center;
+        margin: 20px 0 40px;
+    }
+    
+    .beauty-app .beauty-info p{
+        color: #fff;
+        text-align: left;
+        margin: 20px 0px;
+        font-size: medium;
+    }
+    
+    .beauty-app .beauty-info a{
+        display: inline-block;
+        text-decoration: none;
+        color: #2d2d2d;
+        background-color: #76ffb4;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    
+    .beauty-app .beauty-info a:hover{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: pink;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    
+    .beauty-imgBx img{
+        max-width: 240px;
+    }
+    
+    .beauty-imgBx{
+        width: 100%;
+        display: flex;
+        margin-top: 70px;
+        justify-content: center;
+    }
+    
+    .beauty-thumb{
+        position: relative;
+        left: 44%;
+        margin-top: 40px;
+        transform: translateX(-50%);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .beauty-thumb li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        border: solid 1px #76ffb4;
+        border-radius: 15px;
+        padding: 10px 24px;
+    }
+    
+    .beauty-thumb li:hover{
+        transform: translateY(-15px);
+    }
+    
+    .beauty-thumb li img{
+        margin: auto;
+       max-width: 30px;
+    }
+    
+    h2{
+        text-align: center;
+        font-size: 32px;
+        margin: 30px 0px;
+    }
+    
+    .nike-app{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    
+    .nike-app .nike-info{
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .nike-app .nike-info img{
+        max-width: 90px;
+    }
+    
+    .nike-app .nike-info h3{
+        color: #E5662B;
+        font-size: xx-large;
+        font-weight: bolder;
+        text-align: center;
+        margin: 20px 0 40px;
+    }
+    
+    .nike-app .nike-info p{
+        color: #fff;
+        text-align: left;
+        margin: 20px 0px;
+        font-size: medium;
+    }
+    
+    .nike-app .nike-info a{
+        display: inline-block;
+        text-decoration: none;
+        color: #2d2d2d;
+        background-color: #76ffb4;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    
+    .nike-app .nike-info a:hover{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: pink;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    
+    .nike-imgBx img{
+        max-width: 240px;
+    }
+    
+    .nike-imgBx{
+        width: 100%;
+        display: flex;
+        margin-top: 70px;
+        justify-content: center;
+    }
+    
+    .nike-thumb{
+        position: relative;
+        left: 44%;
+        margin-top: 40px;
+        transform: translateX(-50%);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .nike-thumb li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        border: solid 1px #76ffb4;
+        border-radius: 15px;
+        padding: 10px 24px;
+    }
+    
+    .nike-thumb li:hover{
+        transform: translateY(-15px);
+    }
+    
+    .nike-thumb li img{
+        margin: auto;
+       max-width: 30px;
+    }
+    
+    .temple-app{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    
+    .temple-app .temple-info{
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .temple-app .temple-info img{
+        max-width: 90px;
+    }
+    
+    .temple-app .temple-info h3{
+        color: #D2B180;
+        font-size: xx-large;
+        font-weight: bolder;
+        text-align: center;
+        margin: 20px 0 40px;
+    }
+    
+    .temple-app .temple-info p{
+        color: #fff;
+        text-align: left;
+        margin: 20px 0px;
+        font-size: medium;
+    }
+    
+    .temple-app .temple-info a{
+        display: inline-block;
+        text-decoration: none;
+        color: #2d2d2d;
+        background-color: #76ffb4;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+    
+    .temple-app .temple-info a:hover{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background-color: pink;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+    
+    .temple-imgBx img{
+        max-width: 240px;
+    }
+    
+    .temple-imgBx{
+        width: 100%;
+        display: flex;
+        margin-top: 70px;
+        justify-content: center;
+    }
+    
+    .temple-thumb{
+        position: relative;
+        left: 44%;
+        margin-top: 40px;
+        transform: translateX(-50%);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .temple-thumb li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: 0.5s;
+        border: solid 1px #76ffb4;
+        border-radius: 15px;
+        padding: 10px 24px;
+    }
+    
+    .temple-thumb li:hover{
+        transform: translateY(-15px);
+    }
+    
+    .temple-thumb li img{
+        margin: auto;
+       max-width: 30px;
+    }
+    
+    
+    footer{
+        text-align: center;
+        margin-top: 80px;
+    }
+    
+    footer a{
+        text-decoration: none;
+        font-size: 16px;
+        color: #fff;
+    }
+    
+    footer a:hover{
+        text-decoration: none;
+        font-size: 16px;
+        color: pink;
+    }
+    
+    }
+
+
+@media(min-width: 720px) and (max-width:1023px){
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        
+        body{
+            min-height: 100vh;
+            width: 100%;
+            background-color: #2d2d2d;
+            color: #fff;
+            letter-spacing: 4px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 30px;
+        }
+        
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.6s;
+            padding: 20px 40px;
+            z-index: 2;
+        }
+        
+        header.sticky{
+            padding: 10px 40px 10px;
+            background-color: #76ffb4;
+            color: #2d2d2d;
+        }
+        
+        header.sticky a{
+            color: #2d2d2d;
+        }
+        
+        header .logo{
+            position: relative;
+            transition: 0.6s;
+            display: flex;
+            max-width: 120px;
+        }
+        
+        header .logo img{
+            width: 120px;
+        }
+        
+        header .navigation{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80%;
+            z-index: 3;
+            background-color: #fff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.2s;
+            list-style: none;
+            padding-left: 0;
+            visibility: hidden;
+            opacity: 0;
+        }
+    
+        header .navigation.active{
+            visibility: visible;
+            opacity: 1;
+        }
+    
+        header ul li{
+            position: relative;
+            top: 30%;
+        }
+            
+        header ul li p{
+            position: relative;
+            margin: 10px 0px 0px;
+            border-radius: 5px;
+            font-size: large;
+            text-decoration: none;
+            color: #76ffb4;
+            letter-spacing: 4px;
+            transition: 0.6s;
+            cursor: default;
+        }
+    
+        header ul li a{
+            display: inline-block;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #2d2d2d;
+            letter-spacing: 4px;
+            font-size: large;
+            margin-top: 10px;
+            margin-left: 0;
+        }
+        
+        header ul li a:hover{
+            transition: 0.2s;
+            color: pink;
+        }
+        .toggleMenu{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            background: url(../img/menu.png);
+            background-position: center;
+            background-size: 30px;
+            background-repeat: no-repeat;
+            z-index: 4;
+            cursor: pointer;
+        }
+    
+        .toggleMenu.active{
+            background: url(../img/close.png);
+            background-position: center;
+            background-size: 30px;
+            background-repeat: no-repeat;
+            filter: invert(1);
+        }
+        
+        .appbnr{
+            position: relative;
+            display: flex;
+            min-height: 100vh;
+            transition: 0.6s;
+        }
+        
+        .appbnr img{
+            max-width: 300px;
+            margin-top: 50%;
+            transition: 0.6s;
+        }
+        
+        .appbnr p{
+            margin: 30px;
+            font-size: large;
+        }
+        
+        .scroll{
+            margin-top:100px;
+            margin-bottom:100px;
+            font-size: medium;
+            font-weight: light;
+        }
+        
+        .scroll i{
+            padding:5px;
+        }
+        
+        .app-wrapper{
+            margin-top: 50px;
+        }
+
+        .beauty-app{
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        
+        .beauty-app .beauty-info{
+            position: relative;
+            max-width: 100%;
+            text-align: center;
+        }
+        
+        .beauty-app .beauty-info img{
+            max-width: 90px;
+        }
+        
+        .beauty-app .beauty-info h3{
+            color: #B8A8EB;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+        
+        .beauty-app .beauty-info p{
+            color: #fff;
+            text-align: left;
+            margin: 20px 0px;
+            font-size: medium;
+        }
+        
+        .beauty-app .beauty-info a{
+            display: inline-block;
+            text-decoration: none;
+            color: #2d2d2d;
+            background-color: #76ffb4;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        
+        .beauty-app .beauty-info a:hover{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: pink;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        
+        .beauty-imgBx img{
+            max-width: 240px;
+        }
+        
+        .beauty-imgBx{
+            width: 100%;
+            display: flex;
+            margin-top: 70px;
+            justify-content: center;
+        }
+        
+        .beauty-thumb{
+            position: relative;
+            left: 47%;
+            margin-top: 40px;
+            transform: translateX(-50%);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .beauty-thumb li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            border: solid 1px #76ffb4;
+            border-radius: 15px;
+            padding: 10px 24px;
+        }
+        
+        .beauty-thumb li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .beauty-thumb li img{
+            margin: auto;
+           max-width: 30px;
+        }
+        
+        h2{
+            text-align: center;
+            font-size: 32px;
+            margin: 30px 0px;
+        }
+        
+        .nike-app{
+            flex-direction: column;
+            margin-top: 80px;
+        }
+        
+        .nike-app .nike-info{
+            position: relative;
+            max-width: 100%;
+            text-align: center;
+        }
+        
+        .nike-app .nike-info img{
+            max-width: 90px;
+        }
+        
+        .nike-app .nike-info h3{
+            color: #E5662B;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+        
+        .nike-app .nike-info p{
+            color: #fff;
+            text-align: left;
+            margin: 20px 0px;
+            font-size: medium;
+        }
+        
+        .nike-app .nike-info a{
+            display: inline-block;
+            text-decoration: none;
+            color: #2d2d2d;
+            background-color: #76ffb4;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        
+        .nike-app .nike-info a:hover{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: pink;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        
+        .nike-imgBx img{
+            max-width: 240px;
+        }
+        
+        .nike-imgBx{
+            width: 100%;
+            display: flex;
+            margin-top: 70px;
+            justify-content: center;
+        }
+        
+        .nike-thumb{
+            position: relative;
+            left: 47%;
+            margin-top: 40px;
+            transform: translateX(-50%);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .nike-thumb li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            border: solid 1px #76ffb4;
+            border-radius: 15px;
+            padding: 10px 24px;
+        }
+        
+        .nike-thumb li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .nike-thumb li img{
+            margin: auto;
+           max-width: 30px;
+        }
+        
+        .temple-app{
+            flex-direction: column;
+            margin-top: 80px;
+        }
+        
+        .temple-app .temple-info{
+            position: relative;
+            max-width: 100%;
+            text-align: center;
+        }
+        
+        .temple-app .temple-info img{
+            max-width: 90px;
+        }
+        
+        .temple-app .temple-info h3{
+            color: #D2B180;
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+            margin: 20px 0 40px;
+        }
+        
+        .temple-app .temple-info p{
+            color: #fff;
+            text-align: left;
+            margin: 20px 0px;
+            font-size: medium;
+        }
+        
+        .temple-app .temple-info a{
+            display: inline-block;
+            text-decoration: none;
+            color: #2d2d2d;
+            background-color: #76ffb4;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        
+        .temple-app .temple-info a:hover{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: pink;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        
+        .temple-imgBx img{
+            max-width: 240px;
+        }
+        
+        .temple-imgBx{
+            width: 100%;
+            display: flex;
+            margin-top: 70px;
+            justify-content: center;
+        }
+        
+        .temple-thumb{
+            position: relative;
+            left: 47%;
+            margin-top: 40px;
+            transform: translateX(-50%);
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .temple-thumb li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: 0.5s;
+            border: solid 1px #76ffb4;
+            border-radius: 15px;
+            padding: 10px 24px;
+        }
+        
+        .temple-thumb li:hover{
+            transform: translateY(-15px);
+        }
+        
+        .temple-thumb li img{
+            margin: auto;
+            max-width: 30px;
+        }
+        
+        
+        footer{
+            text-align: center;
+            margin-top: 80px;
+        }
+        
+        footer a{
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+        }
+        
+        footer a:hover{
+            text-decoration: none;
+            font-size: 16px;
+            color: pink;
+        }
+        
+        }
+
+
+@media(min-width: 1024px){
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    min-height: 200vh;
+    background-color: #2d2d2d;
+    color: #fff;
+    letter-spacing: 4px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 100px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+header.sticky{
+    padding: 5px 80px;
+    background-color: #76ffb4;
+    color: #2d2d2d;
+}
+
+header.sticky a{
+    color: #2d2d2d;
+}
+
+header.sticky p{
+    color: pink;
+}
+
+header .logo{
+    position: relative;
+    transition: 0.6s;
+    display: flex;
+}
+
+header .logo img{
+    width: 120px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+header ul li a{
+    position: relative;
+    margin: 10px;
+    padding:10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: 0.6s;
+    font-size: medium;
+}
+
+header ul li p{
+    position: relative;
+    margin: 10px;
+    padding:10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #76ffb4;
+    letter-spacing: 4px;
+    transition: 0.6s;
+    cursor: default;
+}
+
+header ul li a:hover{
+    transition: 0.3s;
+    color: #fff;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.dropdown-menu{
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.dropdown-menu li{
+    padding:0px;
+}
+
+.dropdown-menu li a:hover{
+    background-color: #76ffb4;
+    color: #fff;
+}
+
+.appbnr{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    transition: 0.6s;
+}
+
+.appbnr img{
+    width: 300px;
+    margin-top: 150px;
+    transition: 0.6s;
+}
+
+.appbnr p{
+    margin: 30px;
+}
+
+.scroll{
+    margin-top:80px;
+    font-size: small;
+    font-weight: light;
+}
+
+.scroll i{
+    padding:10px;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
+    margin: 50px 0px;
+}
+
+.beauty-app{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.beauty-app .beauty-info{
+    position: relative;
+    max-width: 600px;
+    text-align: left;
+}
+
+.beauty-app .beauty-info img{
+    max-width: 90px;
+}
+
+.beauty-app .beauty-info h3{
+    color: #B8A8EB;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.beauty-app .beauty-info p{
+    color: #fff;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.beauty-app .beauty-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #2d2d2d;
+    background-color: #76ffb4;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.beauty-app .beauty-info a:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: pink;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.beauty-imgBx img{
+    max-width: 240px;
+}
+
+.beauty-imgBx{
+    width: 100%;
+    display: flex;
+    padding-right: 80px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.beauty-thumb{
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.beauty-thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.beauty-thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.beauty-thumb li img{
+    margin: auto;
+   max-width: 40px;
+}
+
+
+.nike-app{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.nike-app .nike-info{
+    position: relative;
+    max-width: 600px;
+    text-align: left;
+}
+
+.nike-app .nike-info img{
+    max-width: 90px;
+}
+
+.nike-app .nike-info h3{
+    color: #B8A8EB;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.nike-app .nike-info p{
+    color: #fff;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.nike-app .nike-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #2d2d2d;
+    background-color: #76ffb4;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.nike-app .nike-info a:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: pink;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nike-imgBx img{
+    max-width: 240px;
+}
+
+.nike-imgBx{
+    width: 100%;
+    display: flex;
+    padding-right: 80px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.nike-thumb{
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nike-thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nike-thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.nike-thumb li img{
+    margin: auto;
+   max-width: 40px;
+}
+
+.nike-app{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.nike-app .nike-info{
+    position: relative;
+    max-width: 600px;
+    text-align: left;
+}
+
+.nike-app .nike-info img{
+    max-width: 90px;
+}
+
+.nike-app .nike-info h3{
+    color: #E5662B;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.nike-app .nike-info p{
+    color: #fff;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.nike-app .nike-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #2d2d2d;
+    background-color: #76ffb4;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.nike-app .nike-info a:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: pink;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.nike-imgBx img{
+    max-width: 240px;
+}
+
+.nike-imgBx{
+    width: 100%;
+    display: flex;
+    padding-right: 80px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.nike-thumb{
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.nike-thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nike-thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.nike-thumb li img{
+    margin: auto;
+   max-width: 40px;
+}
+
+.temple-app{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.temple-app .temple-info{
+    position: relative;
+    max-width: 600px;
+    text-align: left;
+}
+
+.temple-app .temple-info img{
+    max-width: 90px;
+}
+
+.temple-app .temple-info h3{
+    color: #D2B180;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.temple-app .temple-info p{
+    color: #fff;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+.temple-app .temple-info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #2d2d2d;
+    background-color: #76ffb4;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.temple-app .temple-info a:hover{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: pink;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.temple-imgBx img{
+    max-width: 240px;
+}
+
+.temple-imgBx{
+    width: 100%;
+    display: flex;
+    padding-right: 80px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.temple-thumb{
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.temple-thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.temple-thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.temple-thumb li img{
+    margin: auto;
+   max-width: 40px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 0px;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+footer a:hover{
+    text-decoration: none;
+    font-size: 16px;
+    color: pink;
+}
+
+}
